@@ -643,3 +643,47 @@ header.special_local:before, header.special_local:after {
 		header.special_local:before {
 			left: 0;
 		}
+.reviews {
+    border: 0 !important;
+    padding: 0 !important;
+}
+.reviews.top-line {
+    margin-top: -1em;
+}
+
+.reviews.top-line .icon {
+    color:#ffdd17;
+}
+.reviews .icon{
+    color:#fff381;
+    border: 0 !important;
+    padding: 0 !important;
+}
+
+.review_subtext {
+				font-size: 0.8em;
+				text-transform: uppercase;
+                margin-top: -.5em;
+                opacity: .7;
+			}
+.reviews_title {
+    font-size: 1.3em;
+}
+.review_subtext_source {
+				font-size: 0.7em;
+                margin-top: -.5em;
+                opacity: .7;
+                text-align: center;
+			}
+.nav_active {
+    color: #ffdd17;
+}
+.prop_thumb {
+    background: #ddd;
+}
+.prop_thumb img {
+        opacity: .7;
+}
+.prop_thumb img:hover {
+        opacity: 1;
+}
