@@ -22,20 +22,88 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+				
 				<!-- Header -->
 					<header id="header">
-                        <h1><a href="#">FreeAgentRealty.com</a></h1>
+                        <h1><a href="index.html">FreeAgentRealty.com</a></h1>
 						<nav class="links">
 							<ul>
-								<li><a href="#">How We Work</a></li>
-								<li><a href="#">Properties</a></li>
-								<li><a href="#">Listing Services</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Contact</a></li>
-                                <li><a href="#">Reviews</a></li>
+								<li><a href="/how_we_work.html">How We Work</a></li>
+								<li><a href="/properties.html">Properties</a></li>
+								<li class="nav_active"><a href="/services.html">Listing Services</a></li>
+								<li><a href="/about.html">About Us</a></li>
+								<li><a href="/contact.html">Contact</a></li>
+                                <li><a href="/.htaccess">Reviews</a></li>
+							</ul>
+						</nav>
+                        <nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
 							</ul>
 						</nav>
 					</header>
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search 
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section> -->
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="/how_we_work.html">
+											<h3>How We Work</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="/properties.html">
+											<h3>Properties</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="/services.html">
+											<h3>Listing Services</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="/about.html">
+											<h3>About Us</h3>
+											
+										</a>
+									</li>
+                                    <li>
+										<a href="/contact.html">
+											<h3>Contact Us</h3>
+											
+										</a>
+									</li>
+                                    <li>
+										<a href="/reviews.html">
+											<h3>Reviews</h3>
+											
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions LogIn 
+							<section>
+								<ul class="actions vertical">
+									<li><a href="#" class="button big fit">Log In</a></li>
+								</ul>
+							</section>-->
+
+					</section>
 
 				<!-- Main -->
 					<div id="main">
@@ -50,12 +118,14 @@
 									</div>
 									<div class="meta">
 										<h4>share</h4>
-											<ul class="icons">
-												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-											</ul>
+											<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Ffreeagentrealty.com&t=" target="_blank" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Ffreeagentrealty.com&text=:%20http%3A%2F%2Ffreeagentrealty.com" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i><span class="sr-only">Tweet</span></a></li>
+  <li><a href="https://plus.google.com/share?url=http%3A%2F%2Ffreeagentrealty.com" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;"><i class="fa fa-google-plus-square fa-lg" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a></li>
+  <li><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Ffreeagentrealty.com&description=" target="_blank" title="Pin it" onclick="window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-pinterest-square fa-lg" aria-hidden="true"></i><span class="sr-only">Pin it</span></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Ffreeagentrealty.com&title=&summary=&source=http%3A%2F%2Ffreeagentrealty.com" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' +  encodeURIComponent(document.title)); return false;"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i><span class="sr-only">Share on LinkedIn</span></a></li>
+  <li><a href="mailto:?subject=&body=:%20http%3A%2F%2Ffreeagentrealty.com" target="_blank" title="Send email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;"><i class="fa fa-envelope-square fa-lg" aria-hidden="true"></i><span class="sr-only">Send email</span></a></li>
+</ul>
 									</div>
 								</header>
                 <span class="image featured framed"><img src="images/walkway1600x815.jpg" alt="" /></span>
@@ -203,28 +273,28 @@
 									<li>
 										<article>
 											<header class="left_sidebar">
-												<h3><a href="#">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
+												<h3><a href="/contact.html">Ready to take the first step towards savings?</a></h3>
+                                                <a href="/contact.html"><time class="published" datetime="2015-10-20">Contact us to have a Free Agent answer your questions and help you achieve your real estate goals.</time></a>
 											</header>
-                                            <a href="#" class="image sidebar"><span class="icon featured3 fa-check"></span></a>
+                                            <a href="/contact.html" class="image sidebar"><span class="icon featured3 fa-phone"></span></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header class="left_sidebar">
-												<h3><a href="#">Convallis maximus nisl mattis nunc id lorem</a></h3>
-												<time class="published" datetime="2015-10-15">October 15, 2015</time>
+												<h3><a href="/reviews.html">Reviews</a></h3>
+                                                <a href="/reviews.html"><time class="published" datetime="2015-10-10">See what others are saying about their experience working with us</time></a>
 											</header>
-											 <a href="#" class="image sidebar"><span class="icon featured3 fa-rocket"></span></a>
+											 <a href="/reviews.html" class="image sidebar"><span class="icon featured3 fa-thumbs-o-up"></span></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header class="left_sidebar">
-												<h3><a href="#">Euismod amet placerat vivamus porttitor</a></h3>
-												<time class="published" datetime="2015-10-10">October 10, 2015</time>
+												<h3><a href="/how_we_work.html">How We Work</a></h3>
+                                                <a href="/how_we_work.html"><time class="published" datetime="2015-10-10">Find out how we do more to save you more money</time></a>
 											</header>
-											 <a href="#" class="image sidebar"><span class="icon featured3 fa-dollar"></span></a>
+											 <a href="/how_we_work.html" class="image sidebar"><span class="icon featured3 fa-dollar"></span></a>
 										</article>
 									</li>
 								</ul>
@@ -233,22 +303,15 @@
 						<!-- About -->
 							<section class="blurb">
 								<h2>About</h2>
-								<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+								<p>I was born and raised in the Madison area and have deep multifaceted knowledge of the local real estate market.  My diverse background includes experience in the sale and acquisition of residential and commercial property, real estate finance, foreclosure and short sales, renovation,  real estate development, investment analysis, and construction management .   I take great pride in helping my clients achieve their goals weather it be finding the home of their dreams, selling their existing property for top dollar, or assisting them in meeting their investment objectives.  Put my broad experience to work for you, I would be honored for the opportunity to earn your business. </p>
 								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
+									<li><a href="/about.html" class="button">Learn More</a></li>
 								</ul>
 							</section>
 
 						<!-- Footer -->
 							<section id="footer">
-								<ul class="icons">
-									<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+								<p class="copyright">&copy; Free Agent Realty</p>
 							</section>
 
 					</section>
