@@ -1,0 +1,39 @@
+---
+layout: page
+title: Properties
+---
+
+<div class="mapping">    
+  <div class="map-canvas" id="map-event"></div>
+    {% for properties in site.properties %}
+  <div class="map-point" address="" latitude="{{ properties.latitude }}" longitude="{{ properties.longitude }}" style="display:none">
+      <div class="map-marker"><a href="{{ properties.url }}">{{ properties.address }}</a></div>
+    <div></div>
+ </div>  
+    {% endfor %}
+    
+</div>
+
+				<div id="features-wrapper"> 
+					<div class="container">
+						<div class="row">
+{% for properties in site.properties %}
+							<div class="6u 12u(medium)">
+
+								<!-- Box -->
+									<article class="mini-post">
+											<header >
+												<h3><a href="{{ properties.url }}">{{ properties.title }}<br />{{ properties.city }} {{ properties.state }} {{ properties.zip }}</a></h3>
+												<time class="published" datetime="2015-10-20">${{ properties.price }}</time>
+												<a href="#" class="author"><img src="{{ site.baseurl }}/images/Logo_graphic.gif" alt="" /></a>
+											</header>
+											<a href="{{ properties.url }}" class="image"><img src="{{ properties.image_featured }}" alt="" /></a>
+										</article>
+
+							</div>
+{% endfor %}
+						</div>
+					</div>
+				</div>
+						
+                        

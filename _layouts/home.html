@@ -1,7 +1,3 @@
----
-map: main
----
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -9,30 +5,32 @@ map: main
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{{ site.baseurl }} /assets/css/main.css" />
-        <link rel="stylesheet" href="{{ site.baseurl }} /uiKit/uikit.css" />
-        <link rel="stylesheet" href="{{ site.baseurl }} /uiKit/slidenav.css" />
-        <link rel="stylesheet" href="{{ site.baseurl }} /assets/css/custom.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/custom.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <meta property="og:url"                content="http://www.freeagentrealty.com" />
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="Free Agent Realty: The Best Deal in Real Estate" />
+        <meta property="og:description"        content="We off commission free listing services in the Madison WI real estate market" />
+        <meta property="og:image"              content="images/lakeview_1600x815.jpg" />
 	</head>
-	<body>
+	<body class="single">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="Hwrapper">
 
-				
-				<!-- Header -->
+			<!-- Header -->
 					<header id="header">
-                        <h1><a href="index.html">FreeAgentRealty.com</a></h1>
+                        <h1><a href="#">FreeAgentRealty.com</a></h1>
 						<nav class="links">
 							<ul>
-								<li><a href="{{ site.baseurl }} /how_we_work.html">How We Work</a></li>
-								<li><a href="{{ site.baseurl }} /property_listings.html">Properties</a></li>
-								<li><a href="{{ site.baseurl }} /services.html">Listing Services</a></li>
-								<li><a href="{{ site.baseurl }} /about.html">About Us</a></li>
-								<li><a href="{{ site.baseurl }} /contact.html">Contact</a></li>
-                                <li><a href="{{ site.baseurl }} /reviews.html">Reviews</a></li>
+								<li><a href="/how_we_work.html">How We Work</a></li>
+								<li><a href="/property_listings.html">Properties</a></li>
+								<li><a href="/services.html">Listing Services</a></li>
+								<li><a href="/about.html">About Us</a></li>
+								<li><a href="/contact.html">Contact</a></li>
+                                <li><a href="/reviews.html">Reviews</a></li>
 							</ul>
 						</nav>
                         <nav class="main">
@@ -43,7 +41,7 @@ map: main
 							</ul>
 						</nav>
 					</header>
-				<!-- Menu -->
+                <!-- Menu -->
 					<section id="menu">
 
 						<!-- Search 
@@ -103,19 +101,14 @@ map: main
 							</section>-->
 
 					</section>
-{{ content }}
-        
+                {{ content }}
         </div>
-
 		<!-- Scripts -->
 			<script src="{{ site.baseurl }} /assets/js/jquery.min.js"></script>
 			<script src="{{ site.baseurl }} /assets/js/skel.min.js"></script>
 			<script src="{{ site.baseurl }} /assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="{{ site.baseurl }} /assets/js/ie/respond.min.js"></script><![endif]-->
-        <script src="{{ site.baseurl }} /assets/js/main.js"></script>
-        <script src="{{ site.baseurl }} /uiKit/uikit.min.js"></script>
-        <script src="{{ site.baseurl }} /uiKit/lightbox.js"></script>
-        <script src="{{ site.baseurl }} /assets/js/maps.js"></script>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDWc0kltUnm-lTloUNFvcnNdfBbg8HWqoY&callback=initMap"></script>
+			<script src="{{ site.baseurl }} /assets/js/main.js"></script>
+
 	</body>
 </html>
