@@ -372,8 +372,10 @@
 			cursor: hand;
 			display: block;
 			opacity: 0.8;
-			text-align: center;
+			text-align: right;
+            font-size: .8em;
 		}
+
 .icon.featured_small:before {
 				font-size: 2em;
 				line-height: 0em;
