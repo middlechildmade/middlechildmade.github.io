@@ -21,14 +21,17 @@
 .blue {
     color:#3a3a6b;
 }
+.price {
+    font-weight: 500;
+    font-size: 0.8em;
+    line-height: 1;
+    margin-top: 0;
+
+}
 .property_desc {
     font-family: "Raleway", Helvetica, sans-serif;
-    font-size: 0.8em;
-    font-weight: 400;
-    letter-spacing: 0.25em;
-    line-height: 1.85;
-    margin-top: -1em;
-    text-transform: none;
+    font-size: 1em;
+    letter-spacing: 0.15em;
 }
 .icon_desc {
     font-family: "Raleway", Helvetica, sans-serif;
@@ -585,7 +588,7 @@ header.major {
 		position: relative;
 	}
 .tag img{
-    height:6em;
+    height:5em;
 }
 .spacer {
     margin-top: 5em;
@@ -626,7 +629,7 @@ header.major {
 
 }
 .inline_highlight{
-    background-color: #fff7A8;
+    background-color: rgba(255, 247, 171, 0.5);
 }
 header.special_local:before, header.special_local:after {
 			border-bottom: solid 1.5px;
@@ -636,7 +639,7 @@ header.special_local:before, header.special_local:after {
 			opacity: 0.1;
 			position: absolute;
 			top: 4.75em;
-			width: 38%;
+			width: 40%;
 		}
 	header.special_local {
 		margin-bottom: 2em;

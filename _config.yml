@@ -8,6 +8,9 @@ collections:
   properties:
     title: Properties
     output: true
+  reviews:
+    title: Reviews
+    output: true
   uploads:
     title: Uploads
     output: true

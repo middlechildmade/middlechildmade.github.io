@@ -70,12 +70,12 @@ layout: default
                                                 
 								            <li><a class="icon fa-home fa-lg icon_desc"> {{ page.sq_ft }} Sq Ft</a>
 								<li>&nbsp;</li>
-                                            <li><a class="icon fa-bed fa-lg icon_desc">{{ page.bed }} Beds</a></li>
+                                            <li><a class="icon fa-bed fa-lg icon_desc"> {{ page.bed }} Beds</a></li>
                                 <li>&nbsp;</li>
                                             <li><a class="icon fa-bed fa-lg icon_desc"> {{ page.bath }} Bath</a></li>
 											</ul>
                                             </section>
-                                        <div class="property_desc"><br />{{content}}</div>
+                                        <div class="property_desc"><br />{{content}}{{ page.propertyDescription }}</div>
                                         <ul class="alt property_desc spacer">
                                                 <li></li>
 												<li></li>
@@ -191,16 +191,16 @@ layout: default
 									<section id="contact">
 								<form method="post" action="#">
 									<div class="field half first">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<label for="name"></label>
+										<input type="text" name="name" id="name" placeholder="Name"/>
 									</div>
 									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<label for="email"></label>
+										<input type="text" name="email" id="email" placeholder="Email"/>
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
+										<label for="message"></label>
+										<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
 									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="special" /></li>
@@ -277,8 +277,8 @@ layout: default
 										<article class="mini-post">
 											<header>
 												<h3><a href="{{ properties.url }}">{{ properties.title }}<br />{{ properties.city }} {{ properties.state }} {{ properties.zip }}</a></h3>
-												<time class="published" datetime="2015-10-20">${{ properties.price }}</time>
-												<a href="#" class="author"><img src="{{ site.baseurl }}/images/Logo_graphic.gif" alt="" /></a>
+												<p class="price">${{ properties.price }}</p>
+												<a href="#" class="author"><img src="{{ site.baseurl }}/images/Logo_graphic_grey.png" alt="" /></a>
 											</header>
 											<a href="{{ properties.url }}" class="image"><img src="{{ properties.image_featured }}" alt="" /></a>
 										</article>

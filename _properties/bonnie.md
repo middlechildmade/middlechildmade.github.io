@@ -29,6 +29,5 @@ image_15: "/images/2829foxwood/015.jpg"
 image_16: "/images/2829foxwood/001.jpg"
 latitude: 43.081789
 longitude: -89.205586
+propertyDescription: Finally....an affordable home with style! Lots to love about this one. Great light filled open floorplan. Awesome living room with a vaulted ceiling and skylight. Super functional updated eat in kitchen. Spacious master bedroom with a walk-in closet.<br /><br />A nice deck and really cool screened porch provide additional living space during the warmer months and overlook the good size fully fenced backyard. The unfinished basement is exposed, stubbed for a bathroom, has a walk out, and offers an opportunity for future expansion. This home would make a great place to get started, come take a look.
 ---
-
-Finally....an affordable home with style! Lots to love about this one. Great light filled open floorplan. Awesome living room with a vaulted ceiling and skylight. Super functional updated eat in kitchen. Spacious master bedroom with a walk-in closet. A nice deck and really cool screened porch provide additional living space during the warmer months and overlook the good size fully fenced backyard. The unfinished basement is exposed, stubbed for a bathroom, has a walk out, and offers an opportunity for future expansion. This home would make a great place to get started, come take a look
