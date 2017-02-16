@@ -181,7 +181,8 @@ layout: default
 									<div class="meta">
                                         
                                         <p class="published">MLS # 1787398</p>
-                                        <a class="button fit"><i class="fa fa-print fa-lg"></i>Print</a>
+                                        <a class="button fit"><i class="fa fa-print fa-lg"></i> Print</a>
+                                        <a class="button fit" href="/pdfs/{{ page.pdf }}"><i class="fa fa-file-pdf-o fa-lg"></i> Download pdf</a>
 										<!--<a href="#" class="author"><span class="name">Agent: Grant Smith</span><img src="images/Logo_graphic.gif" alt="" /></a>-->
                                         
                                         <!-- Contact -->
@@ -231,72 +232,17 @@ layout: default
 
 						<!-- Intro -->
 							<section id="intro">
-								<a href="#" class="logo_circle"><img src="{{ site.baseurl }} /images/Logo_graphic_yellow.gif" alt="" /></a>
+								<a href="{{ site.baseurl }}/index.html" class="logo_circle"><img src="{{ site.baseurl }} /images/Logo_blue.png" alt="" /></a>
 								<header>
 									<h2>Free Agent Realty</h2>
 									<p>The best deal in real estate</p>
 								</header>
 							</section>
-              <!-- Property Summary -->
-                        
-                        
-                        
-                        
-                        <section>
-								<ul class="posts">
-									<li>
-										<article>
-											<header>
-                                                <p>Property Summary</p>
-                            <h2>{{ page.title }}<br />{{ page.city }}, {{ page.state }} {{ page.zip }}</h2>
-                            <h2>${{ page.price }}</h2>
-                        <ul class="posts summary_list">
-									<li>
-								<p class="prop_summary">{{ page.bed }} Bedrooms</p>
-								<p class="prop_summary">{{ page.bath }} Bathroom</p>
-                                <p class="prop_summary">{{ page.sq_ft }} sq ft</p>
-                                    </li>
-                        </ul>
-                            <section>              
-                                <div class="mapping">    
-  <div class="map-canvas" id="map-event"></div>  
-  <div class="map-point" address="" latitude="{{ page.latitude }}" longitude="{{ page.longitude }}" style="display:none">
- </div>      
-</div>
-                                </section>
-											</header>
-										</article>
-									</li>
-								</ul>
-							</section> 
-                        <section>
-                              <h1>More Properties...</h1>
-								<div class="mini-posts">
- {% for properties in site.properties limit:3 %}                                 
-									<!-- Mini Post -->
-										<article class="mini-post">
-											<header>
-												<h3><a href="{{ properties.url }}">{{ properties.title }}<br />{{ properties.city }} {{ properties.state }} {{ properties.zip }}</a></h3>
-												<p class="price">${{ properties.price }}</p>
-												<a href="#" class="author"><img src="{{ site.baseurl }}/images/Logo_graphic_grey.png" alt="" /></a>
-											</header>
-											<a href="{{ properties.url }}" class="image"><img src="{{ properties.image_featured }}" alt="" /></a>
-										</article>
-{% endfor %}
 
-
-								</div>
-							</section>
-                        
-						<!-- About -->
-							<section class="blurb">
-								<h2>About</h2>
-								<p>I was born and raised in the Madison area and have deep multifaceted knowledge of the local real estate market.  My diverse background includes experience in the sale and acquisition of residential and commercial property, real estate finance, foreclosure and short sales, renovation,  real estate development, investment analysis, and construction management .   I take great pride in helping my clients achieve their goals weather it be finding the home of their dreams, selling their existing property for top dollar, or assisting them in meeting their investment objectives.  Put my broad experience to work for you, I would be honored for the opportunity to earn your business. </p>
-								<ul class="actions">
-									<li><a href="/about.html" class="button">Learn More</a></li>
-								</ul>
-							</section>
-
+                        <!-- left sidebar -->
+                        {% if page.sidebar %}
+                        {% include {{ page.sidebar }} %}
+                        {% endif %}
 						<!-- Footer -->
 							<section id="footer">
 								<p class="copyright">&copy; Free Agent Realty</p>
