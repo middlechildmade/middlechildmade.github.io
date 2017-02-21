@@ -301,21 +301,6 @@ dt {
 dd {
   margin-left: 0;
 }
-/* Horizontal rules
- ========================================================================== */
-/*
- * 1. Address differences between Firefox and other browsers.
- * 2. Style
- */
-hr {
-  /* 1 */
-  box-sizing: content-box;
-  height: 0;
-  /* 2 */
-  margin: 15px 0;
-  border: 0;
-  border-top: 1px solid #ddd;
-}
 /* Address
  ========================================================================== */
 address {
